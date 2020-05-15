@@ -11,11 +11,11 @@ const app = express();
 app.use(bodyParser.json());
 
 // Use routes
-app.use('.api/items', items);
+app.use('/api/items', items);
 
 //DB 
 require('dotenv').config();
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 8000;
 
 
 app.use(cors()); // middleware
