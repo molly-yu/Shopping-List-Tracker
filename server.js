@@ -15,7 +15,7 @@ app.use('/api/items', items);
 
 //DB 
 require('dotenv').config();
-const port = process.env.PORT || 8000;
+const port = process.env.PORT || 5000;
 
 
 app.use(cors()); // middleware
